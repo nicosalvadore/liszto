@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liszto</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Six sound buttons -->
+        <!-- Sound Library : https://samplefocus.com/tag/cartoon -->
+        <!-- Convert Base64 to mp3 : https://base64.guru/converter/decode/audio -->
+        <div class="buttons">
+            <button class="sound-btn" data-sound="sound1" data-icon="fa-solid fa-child-reaching" data-color="#FF5733">I Like To Move It</button>
+            <button class="sound-btn" data-sound="sound2" data-icon="fa-solid fa-exclamation" data-color="#33FF57">Tada !</button>
+            <button class="sound-btn" data-sound="sound3" data-icon="fa-solid fa-ghost" data-color="#5733FF">Cartoon</button>
+            <button class="sound-btn" data-sound="sound4" data-icon="fa-solid fa-person-falling-burst" data-color="#FF9933">Falling</button>
+            <button class="sound-btn" data-sound="sound5" data-icon="fa-solid fa-landmark" data-color="#FF33A1">Pink Panther</button>
+            <button class="sound-btn" data-sound="sound6" data-icon="fa-solid fa-radio" data-color="#33A1FF">Radio</button>
+        </div>
+
+        <!-- Play/Pause button -->
+        <div class="play-pause-btn">
+            <button id="playPauseBtn"><i class="fa fa-play"></i></button>
+        </div>
+    </div>
+
+    <!-- Audio elements -->
+    <audio id="sound1" src="media/sound1.mp3"></audio>
+    <audio id="sound2" src="media/sound2.mp3"></audio>
+    <audio id="sound3" src="media/sound3.mp3"></audio>
+    <audio id="sound4" src="media/sound4.mp3"></audio>
+    <audio id="sound5" src="media/sound5.mp3"></audio>
+    <audio id="sound6" src="https://stream.srg-ssr.ch/m/rsj/aacp_96"></audio>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+

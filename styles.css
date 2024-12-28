@@ -1,0 +1,96 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+/* Container for buttons */
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 80vw;
+    height: 80vh;
+    padding: 10px;
+}
+
+/* Grid for sound buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+}
+
+/* Styling for each sound button */
+.sound-btn {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for sound buttons */
+.sound-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+}
+
+/* Icon styling */
+.sound-btn i {
+    font-size: 30px;
+}
+
+/* Active (playing) button styling */
+.sound-btn.playing {
+    background-color: #FFEB3B; /* Highlight color for the playing sound button */
+    border: 2px solid #FF9800; /* Optional: Add a border to indicate it's active */
+    transform: scale(1.1); /* Optional: Slight scale-up effect */
+}
+
+/* Play/Pause button styling */
+.play-pause-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+#playPauseBtn {
+    background-color: #FF5722;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#playPauseBtn:hover {
+    background-color: #FF7043;
+    transform: scale(1.1);
+}
+
